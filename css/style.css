@@ -1,0 +1,17 @@
+#board {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.wall {
+	background-color: #666666;
+	position: absolute;
+}
+.snake {
+	background-color: #66AA66;
+	position: absolute;
+}
+.food {
+	background-color: #ff9966;
+	position: absolute;
+}

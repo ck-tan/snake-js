@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<title>JS Snake without Canvas</title>
+		
+		<meta name="description" content="snake">
+		<meta name="author" content="cK">
+		
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<style type="text/css">
+			html,body {
+				padding:0;
+				margin:0;
+				height:100%;
+				background-color: #FFFFFF;
+			}
+			#floater {
+				position:relative;
+				float:left;
+				height:50%;
+				margin-bottom:-270px;
+				width:1px;
+			}
+			#title {
+				padding:20px 0px;
+				margin: 0 auto;
+			}
+			#title h1 {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size:30px;
+				color:#333;
+				position:relative; 
+				clear:left;
+				width:100%;
+				margin:0 auto;
+				text-align: center;
+			}
+			#centered {
+				position:relative; clear:left;
+				width:500px; /*500px*/
+				margin:0px auto;
+				background:#fff;
+			} 
+			#main {
+				position:relative;
+				height:100%;
+				width:100%;
+				margin:0px auto;
+			}
+			#game{
+				height:360px; /*360px*/
+				width:100%;
+				margin:-4px;
+				border:4px solid #666;
+			}
+			#desc {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size:14px;
+				color:#333;
+			}
+			#backBtn {
+				border: 0px;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="scripts/snake.js"></script>
+	</head>
+	<body>
+		<div id="floater">
+		</div>
+		<!-- <div id="title"><h1>Snake</h1></div> -->
+		<div id="title"><h1>Snake</h1></div>
+		<div id="centered">
+			<div id="main">
+				<div id="game">
+					<div id="board" tabindex="0">
+					</div>
+				</div>
+				<div>
+					<p id="desc">
+						<span id="fps">0</span><span> FPS</span>
+						<span>Score: </span><span id="score">0</span>
+						<br>
+						<span id="status"></span> 
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
